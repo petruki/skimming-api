@@ -1,4 +1,4 @@
-import handler from "../helpers/lib-handler.ts";
+import facade from "../helpers/skimming-facade.ts";
 import getBool from "../helpers/index.ts";
 import {
     APP_CONTEXT_ENDPOINT,
@@ -31,7 +31,7 @@ export default async (context: Context) => {
         const regex = getBool(req.searchParams.get('regex'), false);
         const skipCache = getBool(req.searchParams.get('skipCache'), false);
 
-        const results = await handler(
+        const results = await facade(
             files, url, query, parseInt(previewLength), ignoreCase, trimContent, regex, skipCache);
 
         res.status = 200;
