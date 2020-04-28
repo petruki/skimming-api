@@ -8,11 +8,7 @@ export async function handler(req: object) {
       "cache-control": "no-cache, no-store, must-revalidate, max-age=0, s-maxage=0",
     },
     body: JSON.stringify({
-        message: 'Success',
-        url: APP_CONTEXT_ENDPOINT,
-        files: APP_FILES.split(","),
-        cacheDuration: `${APP_CACHE_EXP_DURATION}s`,
-        cacheSize: APP_CACHE_SIZE
+        message: 'Success'
     })
   };
 }

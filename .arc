@@ -1,8 +1,6 @@
 @app
 skimming-api
 
-@static
-
 @http
 get /config
 get /skim
