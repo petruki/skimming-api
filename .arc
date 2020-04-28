@@ -1,9 +1,11 @@
 @app
-begin-app
+skimming-api
 
 @static
 
 @http
+get /config
+get /skim
 
 @tables
 data

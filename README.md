@@ -34,10 +34,10 @@ Request (GET)
  - previewLength: ength of the content to be displayed
    - When 0: it display only the query value
    - When -1: it display the content until its first found line break
- - ignoreCase: ignore case =\
+ - ignoreCase: ignore case
  - trimContent: prettify the content, basically
  - regex: enable regular expression searching method
- - skipCache: skip cache \=
+ - skipCache: skip cache
  
 **Sample response**
 ```json
