@@ -1,5 +1,5 @@
-import Skimming from "https://raw.githubusercontent.com/petruki/skimming/v1.0.3/mod.ts";
-import { Output } from "https://raw.githubusercontent.com/petruki/skimming/v1.0.3/src/lib/types.ts";
+import Skimming from "https://raw.githubusercontent.com/petruki/skimming/v1.0.4/mod.ts";
+import { Output } from "https://raw.githubusercontent.com/petruki/skimming/v1.0.4/src/lib/types.ts";
 import { APP_CACHE_SIZE, APP_CACHE_EXP_DURATION } from "../config.ts";
 
 const skimmer = new Skimming({ expireDuration: APP_CACHE_EXP_DURATION, size: APP_CACHE_SIZE });
