@@ -1,8 +1,8 @@
-const env = Deno.env();
+import { config } from "https://deno.land/x/dotenv/dotenv.ts";
 
-export const APP_HOST = env.APP_HOST || "127.0.0.1";
-export const APP_PORT = env.APP_PORT || 4000;
-export const APP_CONTEXT_ENDPOINT = env.APP_CONTEXT_ENDPOINT || "https://raw.githubusercontent.com/petruki/skimming/master/";
-export const APP_FILES = env.APP_FILES || "README.md";
-export const APP_CACHE_EXP_DURATION: number = parseInt(env.APP_CACHE_EXP_DURATION) || 5;
-export const APP_CACHE_SIZE: number = parseInt(env.APP_CACHE_SIZE) || 100;
+export const APP_HOST = config().APP_HOST;
+export const APP_PORT = config().APP_PORT;
+export const APP_CONTEXT_ENDPOINT = config().APP_CONTEXT_ENDPOINT;
+export const APP_FILES = config().APP_FILES;
+export const APP_CACHE_EXP_DURATION: number = parseInt(config().APP_CACHE_EXP_DURATION);
+export const APP_CACHE_SIZE: number = parseInt(config().APP_CACHE_SIZE);
