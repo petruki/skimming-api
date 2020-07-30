@@ -8,7 +8,7 @@ import { Context } from "https://deno.land/x/oak/context.ts";
 
 export default async (context: Context) => {
 
-    const req = context.request;
+    const req = context.request.url;
     const res = context.response;
 
     try {
