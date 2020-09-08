@@ -8,4 +8,4 @@ app.use(router.routes());
 
 console.log(`Listening on port: ${APP_PORT}...`);
 
-await app.listen(`${APP_HOST}:${APP_PORT}`);
+app.listen(`${APP_HOST}:${APP_PORT}`);
