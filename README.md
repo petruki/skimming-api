@@ -3,7 +3,7 @@
 
 # `Skimming API `
 
-Skimming API is a RESTful API that uses  [Skimming](https://github.com/petruki/skimming) and [Oak Middleware](https://github.com/oakserver/oak) modules to deliver a simple and efficient search engine.
+Skimming API is a RESTful API that uses [Skimming](https://github.com/petruki/skimming) and [Oak Middleware](https://github.com/oakserver/oak) modules to deliver a simple and efficient search engine.
 
 ## Usage
 
