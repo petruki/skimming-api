@@ -1,7 +1,10 @@
-import { Skimming, Output } from "https://deno.land/x/skimming/mod.ts";
-import { APP_CACHE_SIZE, APP_CACHE_EXP_DURATION } from "../config.ts";
+import { Output, Skimming } from "https://deno.land/x/skimming@v1.0.8/mod.ts";
+import { APP_CACHE_EXP_DURATION, APP_CACHE_SIZE } from "../config.ts";
 
-const skimmer = new Skimming({ expireDuration: APP_CACHE_EXP_DURATION, size: APP_CACHE_SIZE });
+const skimmer = new Skimming({
+  expireDuration: APP_CACHE_EXP_DURATION,
+  size: APP_CACHE_SIZE,
+});
 
 export default async function handler(
   files: string[],
@@ -11,9 +14,8 @@ export default async function handler(
   ignoreCase: boolean,
   trimContent: boolean,
   regex: boolean,
-  skipCache: boolean = false
+  skipCache = false,
 ): Promise<Output[]> {
-    
   const skimContext = {
     url,
     files,
@@ -25,7 +27,7 @@ export default async function handler(
     previewLength,
     ignoreCase,
     trimContent,
-    regex
+    regex,
   });
 
   return results;

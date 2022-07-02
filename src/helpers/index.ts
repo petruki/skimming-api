@@ -1,5 +1,7 @@
-export default function getBool(value: any, _default: boolean): boolean {
-
+export default function getBool(
+  value: string | null,
+  _default: boolean,
+): boolean {
   if (value === null || value === "") {
     return _default;
   }
