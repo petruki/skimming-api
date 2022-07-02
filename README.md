@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/petruki/skimming.svg?branch=master)](https://travis-ci.com/github/petruki/skimming)
+[![Master CI](https://github.com/petruki/skimming-api/actions/workflows/master.yml/badge.svg)](https://github.com/petruki/skimming-api/actions/workflows/master.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # `Skimming API `
