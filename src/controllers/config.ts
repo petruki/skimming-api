@@ -1,4 +1,4 @@
-import { Context } from "https://deno.land/x/oak@v10.6.0/context.ts";
+import { Context } from "../deps.ts";
 import {
   APP_CACHE_EXP_DURATION,
   APP_CACHE_SIZE,

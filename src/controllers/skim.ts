@@ -1,7 +1,7 @@
 import facade from "../helpers/skimming-facade.ts";
 import getBool from "../helpers/index.ts";
 import { APP_CONTEXT_ENDPOINT, APP_FILES } from "../config.ts";
-import { Context } from "https://deno.land/x/oak@v10.6.0/context.ts";
+import { Context } from "../deps.ts";
 
 export default async (context: Context) => {
   const req = context.request.url;
