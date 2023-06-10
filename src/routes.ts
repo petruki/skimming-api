@@ -1,4 +1,4 @@
-import { Router } from "https://deno.land/x/oak/mod.ts";
+import { Router } from "./deps.ts";
 import skim from "./controllers/skim.ts";
 import config from "./controllers/config.ts";
 

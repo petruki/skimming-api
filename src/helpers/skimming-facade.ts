@@ -1,4 +1,4 @@
-import { Output, Skimming } from "https://deno.land/x/skimming@v1.0.8/mod.ts";
+import { Output, Skimming } from "../deps.ts";
 import { APP_CACHE_EXP_DURATION, APP_CACHE_SIZE } from "../config.ts";
 
 const skimmer = new Skimming({
