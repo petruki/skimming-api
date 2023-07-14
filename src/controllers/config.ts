@@ -1,10 +1,5 @@
-import { Context } from "../deps.ts";
-import {
-  APP_CACHE_EXP_DURATION,
-  APP_CACHE_SIZE,
-  APP_CONTEXT_ENDPOINT,
-  APP_FILES,
-} from "../config.ts";
+import { Context } from '../deps.ts';
+import { APP_CACHE_EXP_DURATION, APP_CACHE_SIZE, APP_CONTEXT_ENDPOINT, APP_FILES } from '../config.ts';
 
 export default (context: Context) => {
   const res = context.response;
@@ -12,9 +7,9 @@ export default (context: Context) => {
   try {
     res.status = 200;
     res.body = {
-      message: "Success",
+      message: 'Success',
       url: APP_CONTEXT_ENDPOINT,
-      files: APP_FILES.split(","),
+      files: APP_FILES.split(','),
       cacheDuration: `${APP_CACHE_EXP_DURATION}s`,
       cacheSize: APP_CACHE_SIZE,
     };
