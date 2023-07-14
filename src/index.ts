@@ -1,6 +1,6 @@
-import { Application } from "./deps.ts";
-import { APP_HOST, APP_PORT } from "./config.ts";
-import router from "./routes.ts";
+import { Application } from './deps.ts';
+import { APP_HOST, APP_PORT } from './config.ts';
+import router from './routes.ts';
 
 const app = new Application();
 
